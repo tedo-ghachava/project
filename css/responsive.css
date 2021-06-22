@@ -1,0 +1,11 @@
+@media (max-width:1124px) {
+    .navigation{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .login{
+        display: none;
+    }
+}
