@@ -31,24 +31,32 @@
 
 .nav-ul{
     margin-right: 400px;
+    display: flex;
 }
 .nav-li {
-	display: inline-block;
+	
 	padding-right: 30px;
-    transition: linear 1s;
+
 }
-.nav-li:hover{
-    border-bottom: 2px solid #E76F51;
+.nav-a:hover{
+    text-decoration: underline solid #E76F51;
+    text-decoration-thickness: 3px;
 }
 .nav-a{
 	font-family: 'Poppins';
 	font-weight: 500;
 	font-size: 18px; 
 	color: #D2D2D2;
+    transition: all ease-out 2s;
 }
 
 .burger{
-	display: none;
+    /* position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 25px;
+    color: white; */
+    display: none;
 }
 
 .fa-bars{
@@ -62,10 +70,11 @@
     color: #FFFFFF;
     border-radius: 25px;
     padding: 13px 38px;
-    transition: all ease-in ;
+    transition: all ease-in;
+    
 }
-.login-li{
-    display: inline-block;
+.login-ul{
+    display: flex;
 }
 .login-a:hover{
     border: 2px solid white;

@@ -1,11 +1,25 @@
-@media (max-width:1124px) {
+@media (max-width: 1124px) {
     .navigation{
         display: none;
     }
     .burger{
         display: block;
     }
-    .login{
+    .login-ul{
         display: none;
     }
+}
+
+@media (max-width: 576px) {
+    .banner-initials{
+        margin-top: 110px;
+    }
+    .banner-h1{
+        font-size: 45px;
+    }
+    .banner-p{
+        margin: 20px 0px;
+
+    }
+
 }
