@@ -2,7 +2,7 @@
 	background: url(../images/camp.jpg) center center/contain no-repeat;
 	background-size: cover;
 	width: 100%;
-	height: 100vh;
+	height: 1080px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -11,7 +11,7 @@
 
 .banner-color{
 	width: 100%;
-	height: 100vh;
+	height: 1080px;
 	background-color: #3B3735;
 	opacity: 0.5;
 	position: absolute;
@@ -51,17 +51,22 @@
 }
 
 .burger{
-    /* position: absolute;
-    top: 15px;
-    right: 30px;
-    font-size: 25px;
-    color: white; */
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
     display: none;
 }
-
+.burger:hover {
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+.burger:hover .fa-bars {
+    color: #E76F51;
+}
 .fa-bars{
 	font-size: 30px;
 	color: #D9F0FF;
+    transition: all linear 0.5s;
 }
 
 .login-a{
@@ -124,3 +129,16 @@
     border: none;
     cursor: pointer;
 }
+.main-offers{
+    display: flex;
+    justify-content: center;
+}
+.offers-div{
+    width: 100%;
+    max-width: 1518px;
+    height: 312px;
+    background-color: grey;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
