@@ -1,14 +1,39 @@
 @media (max-width: 1124px) {
-    .navigation{
-        display: none;
-    }
     .burger{
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: all 0.5s linear;
     }
-    .login-ul{
-        display: none;
+    .burger.active {
+        transform: translateX(-130px);
+        background-color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    .burger.active .fa-bars {
+        color: #E76F51;
+    }
+
+    .navigation {
+        position: fixed;
+        height: 100vh;
+        flex-direction: column;
+        background-color: black;
+        top: 0;
+        right: -100%;
+        max-width: 300px;
+        transition: right 0.7s ease-in-out;
+    }
+
+    .navigation.active {
+        right: 0;
+    }
+    .nav-ul{
+        flex-direction: column;
+        margin: 0;
+        gap: 30px;
+        margin-top: 10px;
     }
 }
 
@@ -30,5 +55,6 @@
         margin: 20px 0px;
 
     }
-
+    .burger.active {
+        transform: translateX(-210px);
 }

@@ -29,8 +29,14 @@
 	z-index: 30;
 }
 
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .nav-ul{
-    margin-right: 400px;
+    margin: 0 382px 0 49px;
     display: flex;
 }
 .nav-li {
@@ -38,16 +44,17 @@
 	padding-right: 30px;
 
 }
-.nav-a:hover{
-    text-decoration: underline solid #E76F51;
-    text-decoration-thickness: 3px;
+.nav-li a:hover{
+    text-decoration: #E76F51;
 }
-.nav-a{
+.nav-li a {
 	font-family: 'Poppins';
 	font-weight: 500;
 	font-size: 18px; 
 	color: #D2D2D2;
-    transition: all ease-out 2s;
+    transition: all linear 1s;
+    text-decoration: underline solid transparent;
+    text-decoration-thickness: 3px;
 }
 
 .burger{
@@ -56,10 +63,12 @@
     border-radius: 20px;
     display: none;
 }
+
 .burger:hover {
     background-color: #FFFFFF;
     cursor: pointer;
 }
+
 .burger:hover .fa-bars {
     color: #E76F51;
 }
@@ -69,20 +78,23 @@
     transition: all linear 0.5s;
 }
 
-.login-a{
+.login-container {
+    display: flex;
+}
+.login-container a{
     margin-right: 15px;
     font-size: 18px;
     color: #FFFFFF;
     border-radius: 25px;
     padding: 13px 38px;
     transition: all ease-in;
+    border: 2px solid transparent;
     
 }
-.login-ul{
-    display: flex;
-}
-.login-a:hover{
-    border: 2px solid white;
+
+
+.login-container a:hover{
+    border-color: white;
 }
 
 .banner-initials{
@@ -140,5 +152,6 @@
     background-color: grey;
     transform: translateY(-50%);
     top: 50%;
+    z-index: 10;
 }
 
